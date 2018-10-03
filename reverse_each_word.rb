@@ -1,7 +1,11 @@
 def reverse_each_word(sentence)
   word_arr = sentence.split(' ')
-  word_arr.each do |word|
-    word = word.reverse!
+  new_arr = []
+  word_arr.collect do |word|
+    new_arr.push(word.reverse!)
   end
-  word_arr.join(' ')
+  new_arr.join(' ')
 end
+
+
+  
